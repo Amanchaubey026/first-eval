@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            height: 8vh;
+            width: 100%;
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content: space-evenly;
+            list-style-type: none;
+        }
+
+        main {
+            background-image: url("https://images.unsplash.com/photo-1470611736165-18737bb3afce?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJveSUyMGJhY2t8ZW58MHx8MHx8fDA%3D");
+            height: 100vh;
+            width: 100%;
+            display: flex;
+        }
+
+        .left {
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left form {
+            border: 1px solid;
+            background-color: #fff;
+            width: 50%;
+            height: 65vh;
+            padding: 20px;
+        }
+
+        .btn {
+            background-color: yellow;
+            padding: 10px 15px 10px 15px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .right {
+            height: 100vh;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-content {
+            width: 60%;
+            height: 40vh;
+            color: black;
+
+        }
+
+        .right-btn button:nth-child(1) {
+            background-color: #043E96;
+            color: #fff;
+            padding: 10px 17px 10px 17px;
+            border: none;
+        }
+
+        .right-btn button:nth-child(2) {
+            border: 7px solid #043E96;
+            background-color: #fff;
+            color: black;
+            padding: 5px 15px 5px 15px;
+            font-weight: bolder;
+        }
+
+        .part-2 {
+            height: 200vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .video-content {
+            width: 50%;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Audiowide";
+        }
+
+        .logo-content>img {
+            height: 90px;
+            width: 170px;
+
+        }
+
+        .logo-content {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .table-content {
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            width: 70%;
+            background-color: #F2F2F2;
+        }
+
+        table>tbody>tr:nth-child(1) {
+            background-color: #fff;
+        }
+
+        table>tbody>tr:nth-child(2) {
+            background-color: #008081;
+        }
+
+        table>tbody>tr:nth-child(3) {
+            background-color: #fff;
+        }
+
+        table>tbody>tr:nth-child(4) {
+            background-color: #008081;
+        }
+
+        .part-3 {
+            color: #fff;
+            height: 140vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .part-3-content {
+            background-color: black;
+            width: 70%;
+            height: 140vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .main-3 {
+            width: 85%;
+            height: 100vh;
+            display: grid;
+            gap: 7%;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .card img {
+            display: flex;
+            flex-direction: column;
+            height: 170px;
+            width: 170px;
+        }
+
+        .card span {
+            color: pink;
+        }
+
+        .footer-3 {
+            height: 40vh;
+            width: 100%;
+            background-color: #F2F2F2;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .foot-nav {
+            border: 1px solid;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .foot-nav-cont {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .foot-head-last {
+            display: flex;
+            justify-self: flex-start;
+        }
+        .items{
+            background-color: #F2F2F2;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>LIPS</li>
+                <li>EYES</li>
+                <li>FACE</li>
+                <li>NAILSS</li>
+                <li>SKINCARE</li>
+                <li>ACCESSORIES</li>
+                <li>GIFTS & KITS</li>
+                <li>BESTSELLERS</li>
+                <li>NEW LAUNCHES</li>
+                <li>OFFERS</li>
+                <li>BLOG</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="left">
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                    <label for="name">Enter your name: </label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <br />
+                <div class="form-example">
+                    <label for="email">Enter your email: </label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <br />
+                <label for="pet-select">Choose a pet:</label>
+
+                <select name="pets" id="pet-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </select>
+                <br />
+                <br />
+                <fieldset>
+                    <legend>Select a maintenance drone:</legend>
+
+                    <div>
+                        <input type="radio" id="huey" name="drone" value="huey" checked />
+                        <label for="huey">Huey</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="dewey" name="drone" value="dewey" />
+                        <label for="dewey">Dewey</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="louie" name="drone" value="louie" />
+                        <label for="louie">Louie</label>
+                    </div>
+                </fieldset>
+                <br>
+                <br>
+                <label for="start">Choose a time for your appointment:</label>
+                <br>
+                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-11-10" max="2018-11-30" />
+                <br>
+                <br>
+                <div>
+                    <input class="btn" type="submit" value="Subscribe!" />
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <div class="right-content">
+                <h4><em>GET YOUR TICKET AT HALF PRICE UNTIL DEC 2023 HURRY UP, LIMITED SEATS</em></h4><br></br>
+                <div class="right-btn">
+                    <button>REGISTER NOW</button>
+                    <button> LEARN NOW</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- part2 -->
+    <div class="part-2">
+        <div class="video-content">
+            <h1>Flower Video</h1>
+            <div class="video">
+                <video controls width="600">
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+                        type="video/webm" autoplay="true" muted="true" />
+                    <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+                    Download the
+                    <a href="/media/cc0-videos/flower.webm">WEBM</a>
+                    or
+                    <a href="/media/cc0-videos/flower.mp4">MP4</a>
+                    video.
+                </video>
+
+            </div>
+        </div>
+        <div class="logo-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
+                alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HubSpot_Logo.svg/2560px-HubSpot_Logo.svg.png"
+                alt="">
+            <img src="https://images.livemint.com/img/2020/09/07/1600x900/Logo_Color_1599462534815_1599462543241.png"
+                alt="">
+            <img src="data:image/png;base64,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"
+                alt="">
+
+        </div>
+        <div class="table-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="1">Lime</th>
+                        <th colspan="1">Knocky</th>
+                        <th colspan="1">Flor</th>
+                        <th colspan="1">Ella</th>
+                        <th colspan="1">juan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Breed</td>
+                        <td>Jack Russell</td>
+                        <td>Poodle</td>
+                        <td>streetdog</td>
+                        <td>Cocker Spaniel</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>16</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Owner</td>
+                        <td>Mother-in-law</td>
+                        <td>Me</td>
+                        <td>Me</td>
+                        <td>Sister-in-law</td>
+                    </tr>
+                    <tr>
+                        <td>Eating Habilts</td>
+                        <td>Eats everyone</td>
+                        <td>Nibbles at food</td>
+                        <td>Hearty eater</td>
+                        <td>Will eat tills</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Total</td>
+                        <td colspan="1">40</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <div class="part-3">
+        <div class="part-3-content">
+
+            <div class="header-3">
+                <p>16 SPEAKERS FROM 7 CONTRIES AND 3 CONTINENTS</p>
+                <h1>MEET OUT SPEAKERS</h1>
+            </div>
+            <div class="main-3">
+                <div class="card">
+                    <img src="https://www.zuckermanlaw.com/wp-content/uploads/whistleblowing/anonymous-sec-whistleblower.jpg"
+                        alt="">
+                    <h2>
+                        JONATHAN
+                    </h2>
+                    <span>
+                        CAREY
+                    </span>
+                    <P style="font-size: 10px; color: azure;">BARAND MANAGER @PEPSI</P>
+                </div>
+                <div class="card">
+                    <img src="https://www.zuckermanlaw.com/wp-content/uploads/whistleblowing/anonymous-sec-whistleblower.jpg"
+                        alt="">
+                    <h2>
+                        DAVID
+                    </h2>
+                    <span>
+                        PETER
+                    </span>
+                    <P style="font-size: 10px; color: azure;">BARAND MANAGER @PEPSI</P>
+                </div>
+                <div class="card">
+                    <img src="https://www.zuckermanlaw.com/wp-content/uploads/whistleblowing/anonymous-sec-whistleblower.jpg"
+                        alt="">
+                    <h2>
+                        JOHN
+                    </h2>
+                    <span>
+                        CAREY
+                    </span>
+                    <P style="font-size: 10px; color: azure;">BARAND MANAGER @PEPSI</P>
+                </div>
+                <div class="card">
+                    <img src="https://www.zuckermanlaw.com/wp-content/uploads/whistleblowing/anonymous-sec-whistleblower.jpg"
+                        alt="">
+                    <h2>
+                        SIMPSON
+                    </h2>
+                    <span>
+                        MATHEW
+                    </span>
+                    <P style="font-size: 10px; color: azure;">BARAND MANAGER @PEPSI</P>
+                </div>
+                <div class="card">
+                    <img src="https://www.zuckermanlaw.com/wp-content/uploads/whistleblowing/anonymous-sec-whistleblower.jpg"
+                        alt="">
+                    <h2>
+                        VARUN
+                    </h2>
+                    <span>
+                        BHAT
+                    </span>
+                    <P style="font-size: 10px; color: azure;">BARAND MANAGER @PEPSI</P>
+                </div>
+                <div class="card">
+                    <img src="https://www.zuckermanlaw.com/wp-content/uploads/whistleblowing/anonymous-sec-whistleblower.jpg"
+                        alt="">
+                    <h2>
+                        SIMI
+                    </h2>
+                    <span>
+                        AGRAWAL
+                    </span>
+                    <P style="font-size: 10px; color: azure;">BARAND MANAGER @PEPSI</P>
+                </div>
+                <div class="card">
+                    <img src="https://www.zuckermanlaw.com/wp-content/uploads/whistleblowing/anonymous-sec-whistleblower.jpg"
+                        alt="">
+                    <h2>
+                        MAHESH
+                    </h2>
+                    <span>
+                        BHAT
+                    </span>
+                    <P style="font-size: 10px; color: azure;">BARAND MANAGER @PEPSI</P>
+                </div>
+                <div class="card">
+                    <img src="https://www.zuckermanlaw.com/wp-content/uploads/whistleblowing/anonymous-sec-whistleblower.jpg"
+                        alt="">
+                    <h2>
+                        MAHESH
+                    </h2>
+                    <span>
+                        D
+                    </span>
+                    <P style="font-size: 10px; color: azure;">BARAND MANAGER @PEPSI</P>
+                </div>
+
+            </div>
+            <div class="footer-3">
+                <div class="footer-content">
+                    <div class="star">
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                    </div>
+                </div>
+                <div class="foot-nav">
+                    <div class="foot-nav-cont">
+                        <p>Store</p>
+                        <p>Elite</p>
+                        <p>Terms & Condition</p>
+                        <p>Returns</p>
+                        <p>FAQs</p>
+                        <p>About Us</p>
+                    </div>
+                </div>
+                <div class="foot-head-last">
+                    <h1>Get in Touch</h1>
+                </div>
+                <div class="items">
+                    <ul>
+                        <li >Intagram</li>
+                        <i style="color: white;" class="fa-brands fa-instagram"></i>
+                        <li>Facebook</li>
+                        <i style="color: white;" class="fa-brands fa-facebook"></i>
+                        <li>Support</li>
+                        <li>hello@support.com</li>
+                        <li>Careers</li>
+                        <li>We are hiring</li>
+                        <li>Press and Media</li>
+                        <li>pr@cosmetics</li>
+                        <li>influencer colab</li>
+                        <li>Join Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
